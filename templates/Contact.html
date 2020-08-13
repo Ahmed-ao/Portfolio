@@ -1,0 +1,49 @@
+{% extends 'index.html' %} {% load static %} {% block main %} {% endblock main%}
+{% block contact %}
+<div>
+	<p style="margin: 2rem; padding: 1rem;">
+		Thank you! I promise to get back to you as soon as possible
+	</p>
+</div>
+{% endblock contact %}
+<section id="contact" class="site-section section-form text-center">
+	<div class="container">
+		<h3>Contact</h3>
+		<img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines" />
+		<form>
+			<div class="row">
+				<div class="col-sm-6">
+					<input
+						type="text"
+						name="name"
+						class="form-control mt-x-0"
+						placeholder="Name"
+						required
+					/>
+				</div>
+				<div class="col-sm-6">
+					<input
+						type="email"
+						name="email"
+						class="form-control"
+						placeholder="Email"
+						required
+					/>
+				</div>
+				<div class="col-sm-12">
+					<textarea
+						name="message"
+						id="mesaage"
+						class="form-control"
+						placeholder="Message"
+						required
+					></textarea>
+				</div>
+			</div>
+			<button href="#" class="btn" type="submit" style="border-radius: 50px;">
+				Contact <span class="glyphicon glyphicon-send"></span>
+			</button>
+		</form>
+	</div>
+</section>
+<!-- /.section-form -->

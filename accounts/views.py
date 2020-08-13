@@ -1,11 +1,8 @@
 from django.shortcuts import render
-<<<<<<< HEAD
+from .forms import ContactForms
 
-# Create your views here.
-=======
-from .forms import contact
+from django.views.generic import TemplateView
 
-def contact(request):
-    form = contact()
-    render(request, "contact.html", {"form": form})
->>>>>>> accounts
+class Contact(TemplateView):
+    form: ContactForms();
+    template_name = 'Contact.html'
