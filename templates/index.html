@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- Basic Page Needs
@@ -8,11 +9,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>PortfolioPerfect</title>
+    <title> Ahmed Abdallh</title>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Portfolio Website">
+    <meta name="author" content="Ahmed Abdallh">
+    <meta name="keywords" content="Personal Website Portfolio Services Nodejs Django PWA Apps ">
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -25,7 +26,7 @@
 
     <!-- Favicon
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="apple-touch-icon" sizes="150x180" href="{% static 'home.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon.png' %}">
 
     <!-- Stylesheets
@@ -37,30 +38,52 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/component.css' %}" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76614800-1"></script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script>
+        // Navigation overlay
+        var s = skrollr.init({
+            forceHeight: false,
+            smoothScrolling: false,
+            mobileDeceleration: 0.004,
+            mobileCheck: function () {
+                //hack - forces mobile version to be off
+                return false;
+            },
+        });
+    </script>
 
 </head>
+
 <body>
 
-{% block main %}
-    
-    
-    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
+    {% block main %}
+
+
+    <header id="masthead" class="site-header" data-anchor-target=".hero"
+        data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);"
+        data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
         <nav id="primary-navigation" class="site-navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
 
-                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse"
+                        aria-expanded="false">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    
-                    <a href="#hero" class="site-logo" ><img src="{% static 'img/me.jpg' %}" alt="logo" style="width: 64px; height: 48px; border-radius: 25px;" class="rounded-circle"></a>
+
+                    <a href="#hero" class="site-logo"><img src="{% static 'img/home.png' %}" alt="logo"
+                            style="width: 64px; height: 48px; border-radius: 25px;" class="rounded-circle"></a>
 
                 </div><!-- /.navbar-header -->
 
@@ -73,7 +96,7 @@
                         <li class="page-scroll"><a href="#service">Service</a></li>
                         <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
                         <li class="page-scroll"><a href="#contact">Contact</a></li>
-                        
+
                     </ul><!-- /.navbar-nav -->
 
                 </div><!-- /.navbar-collapse -->
@@ -95,7 +118,7 @@
                         <a href="#portfolio" class="btn btn-border" style="border-radius: 50px;">Explore more</a>
                     </div>
                 </div>
-            
+
                 <div class="col-md-6 text-right">
                     <img src="{% static 'img/me.png' %}" alt="Ahmed Abdallh">
                 </div>
@@ -112,98 +135,141 @@
                     <div class="col-md-6 col-md-offset-3">
                         <h2>About</h2>
                         <img src="{% static 'img/lines.svg'%}" class="img-lines" alt="lines">
-                        <p style="font-weight: 600;">Hello! I'm Ahmed, a full stuck developer, a Javascript enthusiast. but python has a place in my heart too. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
-                        <a href="mycv ############" class="btn btn-fill" target="_blank" download style="border-radius: 50px;">Download my cv</a>
+                        <p style="font-weight: 600;">Hello! I'm Ahmed, a full stuck developer, a Javascript enthusiast.
+                            but python has a place in my heart too. I’m currently available for freelance work. If you
+                            have a project that you want to get started or think you need my help with something, then
+                            get in touch.</p>
                     </div>
                 </div>
             </div>
         </section><!-- /.secton-about -->
-
-        <section class="site-section section-skills">
-            <div class="container">
-                <div class="text-center">
-                    <h3>My Skills</h3>
-                    <img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines">
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="skill">
-                            <h4>Html/css</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                        <div class="skill">
-                            <h4>Python</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="88"></div><!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill">
-                            <h4>Javascript/ Node</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div><!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                        <div class="skill">
-                            <h4>Nodejs</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="36"></div><!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill">
-                            <h4>Django</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="97"></div><!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                        <div class="skill">
-                            <h4>UX/UI</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="66"></div><!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                    </div>
-                </div>
+        <div class="container">
+            <div style="text-align:center; margin:0 auto;  padding-bottom:2em;  width: 100%;">
+                <center>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Responsive Ads Unite -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5698749181618828"
+                        data-ad-slot="4631887197" data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </center>
             </div>
+            <section class="color1">
+                <div id="codeconSkills">
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconHTML">
+                            <span class="codeconSkillArea ">HTML</span>
+                            <span class="PercentText ">100%</span>
+                        </div>
+                    </div>
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconCSS">
+                            <span class="codeconSkillArea ">CSS/CSS3</span>
+                            <span class="PercentText ">70%</span>
+                        </div>
+                    </div>
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconjQuery">
+                            <span class="codeconSkillArea ">JavaScript</span>
+                            <span class="PercentText ">90%</span>
+                        </div>
+                    </div>
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconXML">
+                            <span class="codeconSkillArea ">XML </span>
+                            <span class="PercentText ">60%</span>
+                        </div>
+                    </div>
+
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconC">
+                            <span class="codeconSkillArea ">Python</span>
+                            <span class="PercentText ">89%</span>
+                        </div>
+                    </div>
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconJAVA">
+                            <span class="codeconSkillArea ">Django </span>
+                            <span class="PercentText ">85%</span>
+                        </div>
+                    </div>
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconJS">
+                            <span class="codeconSkillArea ">Nodejs</span>
+                            <span class="PercentText ">70%</span>
+                        </div>
+                    </div>
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconPHP">
+                            <span class="codeconSkillArea ">RDB</span>
+                            <span class="PercentText ">76%</span>
+                        </div>
+                    </div>
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconSQL">
+                            <span class="codeconSkillArea ">Bootstrap </span>
+                            <span class="PercentText ">80%</span>
+                        </div>
+                    </div>
+
+                    <div class="codeconSkillbar">
+                        <div id="codeconVBNET">
+                            <span class="codeconSkillArea ">Git/Github</span>
+                            <span class="PercentText ">85%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div><!-- /container -->
         </section><!-- /.secton-skills -->
 
         <section id="service" class="site-section section-services overlay text-center">
             <div class="container" style="border-radius: 25px;">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3>What i do</h3>
+                        <h3>What I do</h3>
                         <img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines">
                     </div>
                     <div class="col-sm-4">
                         <div class="service">
-                            <img src="{% static 'img/front-end.svg' %}" alt="Front End Developer">
+
                             <h4>Front-end</h4>
-                            <p>As a javascript developer, I have experience in HTML5 and CSS3 techniques working with ready frameworks.</p>
+                            <p>As a javascript developer, I have experience in HTML5 and CSS3 techniques working with
+                                ready frameworks.</p>
                         </div><!-- /.service -->
                     </div>
                     <div class="col-sm-4">
                         <div class="service">
-                            <img src="{% static 'img/back-end.svg' %}" alt="Back End Developer">
+
                             <h4>Back-end</h4>
-                            <p>Using django for building fullstack apps or developing Apis suits your need.</p>
+                            <p>Using django or Nodejs for building fullstack Apps or developing APIs to deliver your
+                                service in best shape.</p>
                         </div><!-- /.service -->
                     </div>
                     <div class="col-sm-4">
                         <div class="service">
-                            <img src="{% static 'img/consultancy.svg'}" alt="Coding">
                             <h4>Consultancy</h4>
-                            <p>As well as providing development services, I can also help you decide strategic roadmaps via consultancy services.</p>
+                            <p>As well as providing development services, I can also help you decide strategic roadmaps
+                                via consultancy services.</p>
                         </div><!-- /.service -->
                     </div>
                 </div>
             </div>
         </section><!-- /.secton-services -->
-
+        <!-- To Do -->
         <section id="portfolio" class="site-section section-portfolio">
             <div class="container">
                 <div class="text-center">
@@ -212,91 +278,99 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item" >
-                            <img src="{% static 'img/Githuba.png' %}" class="img-res" alt="" style="width: 90;" >
+                        <div class="portfolio-item">
+                            <img src="{% static 'img/github.png' %}" class="img-res" alt="" style="width: 90;">
                             <div class="portfolio-item-info">
                                 <h4>Pure JavaScript App</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span
+                                        class="glyphicon glyphicon-eye-open"></span></a>
                                 <a href="#"><span class="glyphicon glyphicon-link"></span></a>
                             </div><!-- /.portfolio-item-info -->
                         </div><!-- /.portfolio-item -->
                     </div>
                     <div class="col-md-4 col-xs-6">
                         <div class="portfolio-item">
-                            <img src="{% static 'img/video.jpg' %}" class="img-res" alt="">
+                            <img src="{% static 'img/github.png' %}" class="img-res" alt="">
                             <div class="portfolio-item-info">
-                                <h4>Edited Video</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <h4>Build APIs</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span
+                                        class="glyphicon glyphicon-eye-open"></span></a>
                                 <a href="#"><span class="glyphicon glyphicon-link"></span></a>
                             </div><!-- /.portfolio-item-info -->
                         </div><!-- /.portfolio-item -->
                     </div>
                     <div class="col-md-4 col-xs-6" style="border-radius: 25px;">
                         <div class="portfolio-item">
-                            <img src="{% static 'img/together.png' %}" class="img-res" alt="">
+                            <img src="{% static 'img/github.png' %}" class="img-res" alt="">
                             <div class="portfolio-item-info">
-                                <h4>UX/UI Design</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                <h4>Upgrade your site</h4>
+                                <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span
+                                        class="glyphicon glyphicon-eye-open"></span></a>
                                 <a href="#"><span class="glyphicon glyphicon-link"></span></a>
                             </div><!-- /.portfolio-item-info -->
                         </div><!-- /.portfolio-item -->
                     </div>
-                   
-                    </div>
+
                 </div>
             </div>
+            </div>
         </section><!-- /.secton-portfolio -->
-
         <section class="site-section section-counters text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 col-xs-12">
-                        <p class="counter start" data-to="3" data-speed="2000">0</p>
+                        <p class="counter start" data-to="3" data-speed="2000">3</p>
                         <h4>Years Experience</h4>
                     </div>
                     <div class="col-sm-4 col-xs-12">
-                        <p class="counter start" data-to="3" data-speed="2000">0</p>       
-                        <h4>Projects Delivered</h4>      
                     </div>
                     <div class="col-sm-4 col-xs-12">
-                        <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
-                        <h4>Seconds on this site!<br>Give it a shot</h4>
+                        <p class="counter start" data-to="3" data-speed="2000">3</p>
+                        <h4>Projects Delivered</h4>
                     </div>
                 </div>
             </div>
         </section><!-- /.section-counters -->
+
         {% endblock main %}
 
         {% block contact %}
-            <section id="contact" class="site-section section-form text-center">
-                <div class="container">
-            
-                    <h3>Contact</h3>
-                    <img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines">
-                    <form action="{%  url 'contact' %}" method="POST">
-                        {% csrf_token %}
-                        <div class="col-sm-12">{{ form.as_p }}</div>
-                        <button href="#" class="btn " type="submit" style="border-radius: 50px;">Contact <span
-                                class="glyphicon glyphicon-send"></span></button>
-                    </form>
-                </div>
-            </section><!-- /.section-form -->
+        <section id="contact" class="site-section section-form text-center">
+            <div class="container">
+
+                <h3>Contact</h3>
+                <img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines">
+                <form method="POST">
+
+                    {% csrf_token %}
+                    <div class="col-sm-12">{{ form.as_p }}</div>
+                    <button href="#" class="btn " type="submit" style="border-radius: 50px;">Contact <span
+                            class="glyphicon glyphicon-send"></span></button>
+                </form>
+            </div>
+        </section><!-- /.section-form -->
         {% endblock contact %}
-            
-       
+
+
 
     </main><!-- /#main -->
-
+    
+    {% block footer %}
+        
+    
+        
     <footer id="colophon" class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-xs-12">
                     <!-- <a class="icon facebook-bg" href="#"><i class="icon-facebook"></i></a> -->
-                    <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
-                    <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
-                    <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+                    <a class="icon twitter-bg" href="https://twitter.com/Someone7_7"><i class="icon-twitter"></i></a>
+                    <a class="icon gplus-bg" href="https://www.linkedin.com/in/ahmed-abdallh-21b1a0168/"><i class="icon-linkedin"></i></a>
+                    
                 </div>
-                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">2020 - Ahmed Abdallh</p></div>
+                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+                    <p class="copyright">2020 - Ahmed Abdallh</p>
+                </div>
                 <div class="col-sm-4 col-xs-3">
                     <div class="text-right page-scroll">
                         <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
@@ -305,72 +379,75 @@
             </div>
         </div>
     </footer><!-- /#footer -->
-
+    {% endblock footer %}
     <!-- Modals -->
     <div id="portfolioItem1" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content" style="border-radius: 25px;">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal" style="border-radius: 25px;"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res" src="{% static 'img/portfolio-1.jpg' %}" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Pure JavaScript App</h4>
-            <p>This one is using fetch api and github oath to bring the github users and thier repositories and save them in your local storage simple but to the point</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="btn btn-fill">See for yourself</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
+        <div class="modal-dialog">
+            <div class="modal-content" style="border-radius: 25px;">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal" style="border-radius: 25px;"><span
+                            class="glyphicon glyphicon-remove"></span></a>
+                    <img class="img-res" src="{% static 'img/portfolio-1.jpg' %}" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Pure JavaScript Apps</h4>
+                    <p>This one is using fetch api and github oath to bring the github users and thier repositories and
+                        save them in your local storage simple but to the point</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-fill">See for yourself</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
     <div id="portfolioItem2" class="modal fade" role="dialog" style="border-radius: 25px;">
-      <div class="modal-dialog">
-        <div class="modal-content" style="border-radius: 25px;">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal" style="border-radius: 25px;"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res" src="{% static 'img/portfolio-2.jpg' %}" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Edited Video</h4>
-            <p>This simple video shows you the different edit skills that I know form adding social icons in transition through the video and the shadding at the beggining & ending and the cast rolling in addition to translation. However you can't fit all your skills in one video or I should link you to a whole movie :)</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="btn btn-fill">See for yourself</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
+        <div class="modal-dialog">
+            <div class="modal-content" style="border-radius: 25px;">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal" style="border-radius: 25px;"><span
+                            class="glyphicon glyphicon-remove"></span></a>
+                    <img class="img-res" src="{% static 'img/portfolio-2.jpg' %}" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Bulding APIs</h4>
+                    <p>If you perfer to provide your service as api I can built it for you </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-fill">See for yourself</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
     <div id="portfolioItem3" class="modal fade" role="dialog" style="border-radius: 25px;">
-      <div class="modal-dialog">
-        <div class="modal-content" style="border-radius: 25px;">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal" style="border-radius: 25px;"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res" src="{% static 'img/portfolio-3.jpg' %}" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">UX/UI Design</h4>
-            <p>Design for an fictionist application named money this design consider mobile first approach with different screens from the start when the user clicks on the icon going through different operation that the user can done.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="btn btn-fill">See for yourself</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
+        <div class="modal-dialog">
+            <div class="modal-content" style="border-radius: 25px;">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal" style="border-radius: 25px;"><span
+                            class="glyphicon glyphicon-remove"></span></a>
+                    <img class="img-res" src="{% static 'img/portfolio-3.jpg' %}" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">UX/UI Design</h4>
+                    <p>Design for an fictionist application named money this design consider mobile first approach with
+                        different screens from the start when the user clicks on the icon going through different
+                        operation that the user can done.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-fill">See for yourself</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="{% static 'css/js/bootstrap.min.js' %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="{% static 'js/js/skrollr.min.js' %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
-    <script src="{% static 'js/js/jquery.countTo.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/skrollr.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countTo.min.js' %}"></script>
     <script src="{% static 'js/script.js' %}"></script>
-  
 </body>
+
 </html>

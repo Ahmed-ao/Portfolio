@@ -17,7 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('egbal/', admin.site.urls),
     path('', include('pages.urls')),
     path('contact/', include('accounts.urls'))
 ]
+handler404 = 'pages.views.notfound'
+handler500 = 'pages.views.servererror'
+handler403 = 'pages.views.permessiondenied'
+handler400 = 'pages.views.badrequest'

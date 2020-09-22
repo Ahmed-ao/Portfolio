@@ -1,49 +1,35 @@
 {% extends 'index.html' %} {% load static %} {% block main %} {% endblock main%}
 {% block contact %}
-<div>
-	<p style="margin: 2rem; padding: 1rem;">
-		Thank you! I promise to get back to you as soon as possible
-	</p>
-</div>
-{% endblock contact %}
-<section id="contact" class="site-section section-form text-center">
-	<div class="container">
-		<h3>Contact</h3>
-		<img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines" />
-		<form>
-			<div class="row">
-				<div class="col-sm-6">
-					<input
-						type="text"
-						name="name"
-						class="form-control mt-x-0"
-						placeholder="Name"
-						required
-					/>
-				</div>
-				<div class="col-sm-6">
-					<input
-						type="email"
-						name="email"
-						class="form-control"
-						placeholder="Email"
-						required
-					/>
-				</div>
-				<div class="col-sm-12">
-					<textarea
-						name="message"
-						id="mesaage"
-						class="form-control"
-						placeholder="Message"
-						required
-					></textarea>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6">
+			<div class="flip-card">
+				<div class="flip-card-inner" style="margin-top: 2rem">
+					<div class="flip-card-front">
+						<img
+							src="{% static 'img/thank.jpg' %}"
+							alt="Thank You!"
+							style="width: 720px; height: 640px"
+						/>
+					</div>
+					<div class="flip-card-back">
+						<h1 style="text-align: center">Thanks for showing interest!</h1>
+						<p style="text-align: center">
+							I will try to get back to you as soon as possible!
+						</p>
+						<a
+							style="border-radius: 50px"
+							class="btn btn-success"
+							href="{% url 'home' %}"
+							>GO Back
+						</a>
+					</div>
 				</div>
 			</div>
-			<button href="#" class="btn" type="submit" style="border-radius: 50px;">
-				Contact <span class="glyphicon glyphicon-send"></span>
-			</button>
-		</form>
+		</div>
+		<div class="col-sm-3"></div>
 	</div>
-</section>
-<!-- /.section-form -->
+</div>
+
+{% endblock contact %} {% block footer %} {% endblock footer %}
